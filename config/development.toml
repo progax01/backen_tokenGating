@@ -1,0 +1,7 @@
+[server]
+port = 8090
+
+[solana]
+rpc_url = "https://api.devnet.solana.com"
+cluster = "devnet"
+program_id = "EHyipzMTK3FV63inZTyvqmSYqFxDdKJPKMhHay6yQ9mw"  # Example program ID - replace with your actual program ID 

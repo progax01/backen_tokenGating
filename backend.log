@@ -1,0 +1,32 @@
+Loaded configuration:
+Server port: 8090
+Solana cluster: devnet
+Solana RPC URL: https://api.devnet.solana.com
+Solana program ID: EHyipzMTK3FV63inZTyvqmSYqFxDdKJPKMhHay6yQ9mw
+[2m2025-03-29T21:43:45.826469Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::solana_client[0m[2m:[0m Connected to Solana node at https://api.devnet.solana.com
+Default keypair path: /home/admin/.config/solana/id.json
+[2m2025-03-29T21:43:45.827094Z[0m [32m INFO[0m [2mtoken_gating_backend[0m[2m:[0m Using default Solana keypair from ~/.config/solana/id.json (public key: 3xHGQhGarP88kcTNRBDtXgAtfbfWHvHPsaxNhbKzJv19)
+[2m2025-03-29T21:43:45.829413Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Transaction processor started
+[2m2025-03-29T21:43:45.829434Z[0m [32m INFO[0m [2mtoken_gating_backend[0m[2m:[0m Solana Token Gating backend starting on 127.0.0.1:8090
+[2m2025-03-29T21:43:45.829461Z[0m [32m INFO[0m [2mtoken_gating_backend[0m[2m:[0m Connected to Solana cluster: devnet
+[2m2025-03-29T21:43:45.829467Z[0m [32m INFO[0m [2mtoken_gating_backend[0m[2m:[0m Using program ID: EHyipzMTK3FV63inZTyvqmSYqFxDdKJPKMhHay6yQ9mw
+[2m2025-03-29T21:43:49.114116Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Admin wallet balance: 9.99647912 SOL
+[2m2025-03-29T21:43:49.114326Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Admin: 3xHGQhGarP88kcTNRBDtXgAtfbfWHvHPsaxNhbKzJv19, Resource: 4j4DfqWW8GTcmzzgDALsA1KqjRXqr5XtFeMQLe2jiVHi, Required Mint: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+[2m2025-03-29T21:43:49.114346Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Sending transaction with instruction data: Instruction { program_id: EHyipzMTK3FV63inZTyvqmSYqFxDdKJPKMhHay6yQ9mw, accounts: [AccountMeta { pubkey: 3xHGQhGarP88kcTNRBDtXgAtfbfWHvHPsaxNhbKzJv19, is_signer: true, is_writable: true }, AccountMeta { pubkey: 4j4DfqWW8GTcmzzgDALsA1KqjRXqr5XtFeMQLe2jiVHi, is_signer: false, is_writable: true }, AccountMeta { pubkey: 11111111111111111111111111111111, is_signer: false, is_writable: false }], data: [165, 121, 139, 89, 114, 167, 122, 146, 15, 0, 0, 0, 112, 114, 101, 109, 105, 117, 109, 45, 99, 111, 110, 116, 101, 110, 116, 6, 221, 246, 225, 215, 101, 161, 147, 217, 203, 225, 70, 206, 235, 121, 172, 28, 180, 133, 237, 95, 91, 55, 145, 58, 140, 245, 133, 126, 255, 0, 169] }
+[2m2025-03-29T21:43:50.646056Z[0m [31mERROR[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Failed to configure resource: RPC response error -32002: Transaction simulation failed: Attempt to debit an account but found no record of a prior credit. 
+[2m2025-03-29T21:43:50.679537Z[0m [32m INFO[0m [2mtoken_gating_backend::api::handlers::access[0m[2m:[0m Verifying access for wallet 3xHGQhGarP88kcTNRBDtXgAtfbfWHvHPsaxNhbKzJv19 to resource premium-content
+[2m2025-03-29T21:43:51.287617Z[0m [31mERROR[0m [2mtoken_gating_backend::api::handlers::access[0m[2m:[0m Failed to check if resource exists: Solana RPC error: AccountNotFound: pubkey=4j4DfqWW8GTcmzzgDALsA1KqjRXqr5XtFeMQLe2jiVHi
+[2m2025-03-29T21:43:51.287744Z[0m [31mERROR[0m [2mtower_http::trace::on_failure[0m[2m:[0m response failed [3mclassification[0m[2m=[0mStatus code: 500 Internal Server Error [3mlatency[0m[2m=[0m608 ms
+[2m2025-03-29T21:43:51.305591Z[0m [33m WARN[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Unhandled transaction type
+[2m2025-03-29T21:43:51.305804Z[0m [31mERROR[0m [2mtower_http::trace::on_failure[0m[2m:[0m response failed [3mclassification[0m[2m=[0mStatus code: 500 Internal Server Error [3mlatency[0m[2m=[0m0 ms
+[2m2025-03-29T21:43:51.322923Z[0m [33m WARN[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Unhandled transaction type
+[2m2025-03-29T21:43:51.323089Z[0m [31mERROR[0m [2mtoken_gating_backend::api::handlers::admin[0m[2m:[0m Error adding admin: ChannelError("Failed to receive transaction result: channel closed")
+[2m2025-03-29T21:44:20.759851Z[0m [32m INFO[0m [2mtoken_gating_backend[0m[2m:[0m Shutdown signal received, starting graceful shutdown
+[2m2025-03-29T21:44:20.759917Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Shutting down TokenGatingClient
+[2m2025-03-29T21:44:20.759930Z[0m [32m INFO[0m [2mtoken_gating_backend[0m[2m:[0m Graceful shutdown completed
+[2m2025-03-29T21:44:20.759944Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Transaction processor shutting down
+[2m2025-03-29T21:44:20.759963Z[0m [32m INFO[0m [2mtoken_gating_backend::integration::token_gating_client[0m[2m:[0m Transaction processor terminated
+
+thread 'main' panicked at /home/admin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.44.1/src/runtime/blocking/shutdown.rs:51:21:
+Cannot drop a runtime in a context where blocking is not allowed. This happens when a runtime is dropped from within an asynchronous context.
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

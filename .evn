@@ -1,0 +1,13 @@
+# Server Configuration
+TOKEN_GATE_SERVER_PORT=8080
+
+# Solana Blockchain Configuration
+TOKEN_GATE_SOLANA_RPC_URL=https://api.devnet.solana.com
+TOKEN_GATE_SOLANA_CLUSTER=devnet
+TOKEN_GATE_SOLANA_PROGRAM_ID=EHyipzMTK3FV63inZTyvqmSYqFxDdKJPKMhHay6yQ9mw
+
+# Optional: Logging Configuration
+TOKEN_GATE_LOG_LEVEL=info
+
+# Optional: Admin Wallet Configuration
+TOKEN_GATE_ADMIN_WALLET_PATH=/home/admin/Documents/solana_fund/id.json 
